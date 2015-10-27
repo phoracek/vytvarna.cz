@@ -3,9 +3,9 @@ python:
 - '3.3'
 install:
     - pip install -r requirements.txt
+script:
     - make publish
-    - cp -r output public
-script: true
+    - mv output public
 deploy:
   skip_cleanup: true
   provider: openshift
