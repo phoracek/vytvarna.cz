@@ -8,7 +8,7 @@ script:
     - git config --global user.email "bot@travis-ci.com"
     - git config --global user.name "Bot - Travis CI"
     - git add -f output
-    - git commit -am "Build: $TRAVIS_BUILD_NUMBER"
+    - git commit -am "Build ${TRAVIS_BUILD_NUMBER}"
 deploy:
   provider: openshift
   skip_cleanup: true
