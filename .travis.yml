@@ -1,0 +1,14 @@
+language: python
+python:
+- '3.3'
+install: pip install -r requirements.txt
+script: true
+deploy:
+  provider: openshift
+  user: p.horacek94@gmail.com
+  password:
+    secure: CmEYXO34hy/FAg3Yk9TAAI5pFk1b71SogGlihIq7Pqma5lZge4Jk6JrPxkslQlqH/tNNsc3QbYbz9Sh3rCChR81icDDCoofuyBTOvnJuSCLJF9jb7/aMomuGvhaESorLgMdcAip9bP06mwbtWCRBwerz0hIf3auKoM66N3Pomm31Sdr6jTRDSaavP9qL0TvLeQmyBdF5v7IKt4roYCEDkd92nJb8PqL/RPeoWnFgsS06wA3BXOkVeamTT6PGUeLgwvckxGuQ7AUs/gA/uXMtBo2nwD3eabwOhi3wvYf5qUhvvsGj+FUhjITr+NPo54kQPQT6gg8JnX8k7NMME4+4dgC59EWsLx/foQNAHSUrBUE8Db6QlMgsFnYbPTThiHoTsab3np8LPkTo3jOvEUfuF4CWXtJ30y06XYp9eEDFMoetAL5kmqfV7TBAEVXMfmZgIb6loL1YWRU7FCKq6vCdAr0guLS22cRBmgBFsxjPqjEKHFCFcTlVAmXh28/HEouD1pJcVh2Prrf6bFqoF8Wig+UONbcU7Q293zYm9iDjYRo7uq0BG1G2APyNdNk2rnxzCRFnkZ48S1fMGJd7VRtHUMe1wRScWH/sAxW9DCFaW7HAxQWfSzRBOc3CG8E05kxrt1QA6VwtcbQXOQzMbpF5giQTjVykTKn1c/xc2sOl/Os=
+  app: vytvarna
+  domain: petrhoracek
+  on:
+    repo: phoracek/vytvarna.cz
