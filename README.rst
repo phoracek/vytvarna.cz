@@ -10,7 +10,7 @@ Deploy Nginx Python Cartridge for hosting:
 
 .. code-block:: bash
     
-    rhc app create -a pelican -t http://cartreflect-claytondev.rhcloud.com/github/gsterjov/openshift-advanced-python-cartridge --from-code https://github.com/phoracek/vytvarna.cz.git
+    rhc app create -a vytvarna -t http://cartreflect-claytondev.rhcloud.com/github/gsterjov/openshift-advanced-python-cartridge --from-code https://github.com/phoracek/vytvarna.cz.git
 
 Clone this custom repo:
 
