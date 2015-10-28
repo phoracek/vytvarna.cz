@@ -6,11 +6,11 @@ Kolmackovi
 How to
 ------
 
-Deploy Nginx Cartridge for hosting:
+Deploy Nginx Python Cartridge for hosting:
 
 .. code-block:: bash
     
-    rhc create-app vytvarna http://cartreflect-claytondev.rhcloud.com/reflect?github=gsterjov/openshift-nginx-cartridge --no-git
+    rhc app create -a pelican -t http://cartreflect-claytondev.rhcloud.com/github/gsterjov/openshift-advanced-python-cartridge --from-code https://github.com/phoracek/vytvarna.cz.git
 
 Clone this custom repo:
 

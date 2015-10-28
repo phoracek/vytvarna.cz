@@ -1,6 +1,6 @@
 PY?=python
 PELICAN?=pelican
-PELICANOPTS=-t theme -v -D
+PELICANOPTS=-t theme -v -D -o public
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
